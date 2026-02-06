@@ -1,0 +1,23 @@
+html {
+    scroll-behavior: smooth;
+}
+
+/* ================== HEADER ======================= */
+header {
+    display: flex;
+    width: 50%;
+    align-items: center;
+    justify-content: space-around;
+    background-color: tomato;
+    margin: 0 auto;
+    height: 50px;
+    margin-top: 40px;
+    border-radius: 8px;
+    font-family: sans-serif;
+}
+
+
+
+
+
+/* ================================================= */
