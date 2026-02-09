@@ -18,7 +18,7 @@ header {
     position: fixed;
     z-index: 2;
     transform: translateX(-50%);
-    transition: top 0.3s ease;
+    transition: top 0.2s ease;
 }
 
 header p {
