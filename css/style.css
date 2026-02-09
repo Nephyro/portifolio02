@@ -5,19 +5,75 @@ html {
 /* ================== HEADER ======================= */
 header {
     display: flex;
-    width: 50%;
+    width: min(90%, 900px);
     align-items: center;
     justify-content: space-around;
-    background-color: tomato;
     margin: 0 auto;
     height: 50px;
     margin-top: 40px;
     border-radius: 8px;
     font-family: sans-serif;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    left: 50%;
+    position: absolute;
+    z-index: 2;
+    transform: translateX(-50%);
 }
 
-
-
-
-
+header p {
+    color: #FFB163;
+    font-size: 25px;
+}
 /* ================================================= */
+
+.portifolioPage {
+    position: relative;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.imgagemPrincipal {
+    z-index: 1;
+    width: 100%;
+    height: 100vh;
+    display: block;
+    object-fit: cover;
+}
+
+.textoImagem {
+    position: absolute;
+    inset: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    text-align: center;
+    color: #FFB163;
+    text-shadow: 4px 6px 5px black;
+    font-family: sans-serif;
+    padding: 20px;
+}
+
+.texto1, .texto3 {
+    flex-direction: row;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    letter-spacing: clamp(2px, 1.5vw, 12px);
+    font-size: clamp(18px, 4vw, 35px);
+    letter-spacing: 0.35em;
+}
+
+.texto3 {
+    gap: 14em;
+}
+
+.texto1 {
+    gap: 9em;
+}
+
+.texto2 {
+    font-size: clamp(40px, 10vw, 80px);
+}
