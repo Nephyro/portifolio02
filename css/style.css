@@ -27,6 +27,11 @@ header p {
 }
 /* ================================================= */
 
+body {
+    background-color: #FEEDCD;
+}
+
+
 .portifolioPage {
     position: relative;
     height: 100vh;
@@ -77,6 +82,17 @@ header p {
 .texto2 {
     font-size: clamp(40px, 10vw, 80px);
 }
+
+
+input[type="checkbox"] {
+    appearance: none;
+    width: 50px;
+    height: 22px;
+    background: linear-gradient(91deg, #ff01a5d4, #4b00ffd4);
+    border-radius: 50px;
+    transition: .5s;
+}
+
 
 
 @media (min-width: 601px) and (max-width: 768px) {
