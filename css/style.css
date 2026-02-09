@@ -8,17 +8,17 @@ header {
     width: min(90%, 900px);
     align-items: center;
     justify-content: space-around;
-    margin: 0 auto;
+    margin: 30px auto;
     height: 50px;
-    margin-top: 40px;
     border-radius: 8px;
     font-family: sans-serif;
     backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px);
     left: 50%;
-    position: absolute;
+    position: fixed;
     z-index: 2;
     transform: translateX(-50%);
+    transition: top 0.3s ease;
 }
 
 header p {
