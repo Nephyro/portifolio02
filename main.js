@@ -17,3 +17,29 @@ window.addEventListener('scroll',function(){
     }
     lastScrollTop = scrollTop;
 })
+
+
+const header = document.getElementById('main-header');
+const sections = document.querySelectorAll('.watch-section');
+
+let visibleSections = 0;
+
+const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+        if (entry.isIntersecting) {
+            visibleSections++;
+        } else {
+            visibleSections--;
+        }
+    });
+
+    if (visibleSections > 0) {
+        header.classList.add('scrolled');
+    } else {
+        header.classList.remove('scrolled');
+    }
+}, {
+    threshold: 0.5
+});
+
+sections.forEach(section => observer.observe(section));

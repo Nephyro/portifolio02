@@ -31,6 +31,13 @@ body {
     background-color: #FEEDCD;
 }
 
+header.scrolled {
+    color: #0D9F87;
+}
+
+.section1 {
+    height: 100vh;
+}
 
 .portifolioPage {
     position: relative;
@@ -87,10 +94,44 @@ body {
 input[type="checkbox"] {
     appearance: none;
     width: 50px;
-    height: 22px;
-    background: linear-gradient(91deg, #ff01a5d4, #4b00ffd4);
+    height: 25px;
+    background: linear-gradient(91deg, #FFC32B, #CC5555); 
     border-radius: 50px;
+    position: relative;
+    cursor: pointer;
     transition: .5s;
+}
+
+input[type="checkbox"]::before {
+    content: "";
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background: linear-gradient(91deg, #EE7A0D, #E4CB22);
+    border-radius: 50%;
+    left: 2.8px;
+    top: 2.9px;
+    transition: .5s;
+}
+
+input[type="checkbox"]::after {
+    position: absolute;
+    left: 10px;
+    top: 10px;
+    transition: .5s;
+}
+
+input[type="checkbox"]:checked {
+    background: linear-gradient(91deg, #005151, #0E1543);
+}
+
+input[type="checkbox"]:checked::before {
+    background: linear-gradient(30deg, #1C082B, #0D9F87);
+    left: 27px;
+}
+
+input[type="checkbox"]:checked::after {
+    left: 40px;
 }
 
 
